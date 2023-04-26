@@ -23,14 +23,14 @@
 
     <div class="form-2" id="form2">
         
-        <!-- <br>
+        <br>
         <h6 class = "right "><a href= {{ url }} target="_blank">{{ url }}</a></h6>
            
-        <br> -->
+        <br>
         <h3 id="prediction"></h3>
         
-        <!-- <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
-        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Continue</button> -->
+        <button  id="btn2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
+        <button  id="btn1" onclick="window.open('{{url}}')" target="_blank">Continue</button>
     </div> 
     
 <script src="/static/script.js"></script>
@@ -44,14 +44,14 @@ if (0<=x && x<0.50){
 }
 let txtx = num.toString();
 if(x<=1 && x>=0.50){
-    var label = "Website is safe to use...";
+    var label = "This Website is safe to visit...";
     document.getElementById("prediction").innerHTML = label;
-    document.getElementById("button1").style.display="block";
+    document.getElementById("btn1").style.display="block";
 }
 else if (0<=x && x<0.50){
-    var label = "Website is unsafe to use..."
+    var label = "This Website is unsafe to visit.."
     document.getElementById("prediction").innerHTML = label ;
-    document.getElementById("button2").style.display="block";
+    document.getElementById("btn2").style.display="block";
 }
 
 

@@ -58,6 +58,10 @@ button
     border: none;
 }
 
+#btn1, #btn2
+{
+    display: none;
+}
 
 button:hover
 {
