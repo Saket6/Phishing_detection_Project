@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/"><button>Go back</button></a>
+    <h3>Email Scan</h3>
+    <form action="/predict" id="input_text" method="post" required>
+        <textarea name="textinput" id="text" cols="30" rows="10"></textarea>
+        <button type="submit">Check</button>
+    </form>
+    <div class="prediction">
+        {% if prediction == 1%}
+	<h2 style="color:red;">Looking Spam, Be safe</h2>
+	{% elif prediction == 0%}
+				<h2 style="color:green;"><b>Not a Spam</b></h2>
+	{% endif %}
+    </div>
+</body>
+</html>

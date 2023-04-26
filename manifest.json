@@ -1,0 +1,36 @@
+{
+    "name": "CodePhish",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "options.html"
+      },
+    "icons":
+    {  
+        "128": "logo1.png" 
+
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ],
+        "js": [
+          "static/script.js"
+        ]
+      }
+    ],
+    "permissions": [
+        "alarms",
+        "contextMenus",
+        "storage",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "activeTab",
+        "tabs"
+      ]
+    
+}
