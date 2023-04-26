@@ -33,18 +33,17 @@ form
     /* border: solid 2px white; */
 
 }
-form input
-{
+form input{
      /* padding: 5px; */
-     text-align: center;
-     background: #17171775;
-     width: 22rem;
-     border: solid 4px blueviolet;
-     height: 3.5rem;
-     font-size: x-large;
-     border-radius: 50px;
-     outline: none;
-     color: white;
+    text-align: center;
+    background: #17171775;
+    width: 22rem;
+    border: solid 4px blueviolet;
+    height: 3.5rem;
+    font-size: x-large;
+    border-radius: 48px;
+    outline: none;
+    color: white;
 }
 button
 {
