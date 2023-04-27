@@ -35,16 +35,16 @@ form
 }
 form input
 {
-     /* padding: 5px; */
-     text-align: center;
-     background: #ffffff75;
-     width: 22rem;
-     border: solid 4px #5E5DF0;
-     height: 3.5rem;
-     font-size: x-large;
-     border-radius: 50px;
-     outline: none;
-     color: blueviolet;
+    /* padding: 5px; */
+    text-align: center;
+    background: #ffffff75;
+    width: 22rem;
+    border: solid 4px #5E5DF0;
+    height: 3.5rem;
+    font-size: x-large;
+    border-radius: 50px;
+    outline: none;
+    color: blueviolet;
 }
 button
 {
