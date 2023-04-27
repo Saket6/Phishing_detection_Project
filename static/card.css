@@ -1,0 +1,139 @@
+.background
+{
+	padding-block: 4em 6em;
+	position: relative;
+}
+
+.background::after
+{
+	content: '';
+	background-color: #5E5DF0;
+	height: 50%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.container
+{
+	margin: 0 auto;
+	padding: 50px 0 0;
+	max-width: 960px;
+	width: 100%;
+}
+
+.panel
+{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 25px;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.pricing-table
+{
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	padding: 3em 0;
+	box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+}
+
+.pricing-plan
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 4em;
+}
+
+.pricing-plan:not(.pricing-plan:last-child)
+{
+	border-inline-end: 1px solid var(--hover-green-two);
+}
+
+.pricing-plan:nth-child(1)
+{
+	--hover-green: hsl(240, 83%, 65%);
+	--primary-green: hsl(0, 0%, 3%);
+}
+
+.pricing-plan:nth-child(2)
+{
+	--hover-green: hsl(240, 83%, 65%);
+	--primary-green: hsl(0, 0%, 3%);
+}
+
+.pricing-img
+{
+	margin-block-end: 1.75em;
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	scale: 0.8;
+	/* filter: brightness(0) saturate(100%) invert(46%) sepia(33%) saturate(672%) hue-rotate(105deg) brightness(98%) contrast(84%); */
+}
+
+.pricing-header
+{
+	color: var(--black);
+	opacity: 0.5;
+	font-weight: 600;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.pricing-features
+{
+	color: var(--primary-green);
+	/* font-weight: 600; */
+	font-size: 0.9rem;
+	list-style: none;
+	margin: 50px 0 25px;
+}
+
+.pricing-features-item
+{
+	border-top: 1px solid var(--hover-green-two);
+	line-height: 1.5;
+	padding-block: 1em;
+}
+
+.pricing-features-item:last-child
+{
+	border-bottom: 1px solid var(--hover-green-two);
+}
+
+.login-as
+{
+	color: var(--black);
+	font-size: 0.9rem;
+	font-weight: 300;
+	opacity: 50%;
+}
+
+.pricing-button
+{
+	border-radius: var(--border-radius-pill);
+	background-color: var(--hover-green);
+	color: white;
+	margin-block: 1.5em 0.25em;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.15rem;
+	cursor: pointer;
+	transition: background-color var(--transition-time) var(--transition-curve), padding var(--transition-time) var(--transition-curve);
+}
+
+.pricing-button:hover,
+.pricing-button:focus-visible
+{
+	background-color: var(--primary-green);
+	padding: 0.5em 1.75em;
+}
