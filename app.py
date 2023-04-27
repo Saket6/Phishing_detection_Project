@@ -18,7 +18,12 @@ file.close()
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"])
+@app.route('/')
+def home():
+    return render_template('phising.html')
+
+
+@app.route("/url", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
 
