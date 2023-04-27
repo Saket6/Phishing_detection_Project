@@ -1,0 +1,128 @@
+.main {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 6rem 3fr 1fr;
+  }
+  
+  .bg-image {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/images/food_rangers_bg.jpg");
+    background-image: url("12953623_Data_security_24.jpg");
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms ease, opacity 400ms ease, background-position 400ms ease;
+    z-index: -2;
+  }
+  
+  .main::before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.9));
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  .heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Alegreya Sans SC", sans-serif;
+    letter-spacing: 0.05em;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .heading::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("My\ project\ \(1\).ico");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .heading:hover {
+    opacity: 0.9;
+  }
+  
+  .subtitle {
+    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    max-width: clamp(90%, 4vw, 100%);
+    font-weight: 300;
+    line-height: 2ch;
+    text-align: center;
+  }
+  .subtitle:hover > .bg-image {
+    background-size: 70%;
+    opacity: 90%;
+  }
+  .subtitle > * {
+    display: block;
+  }
+  .subtitle-1 {
+    opacity: 40%;
+    transition: opacity 250ms ease-in-out;
+  }
+  .subtitle-1:hover {
+    opacity: 100%;
+  }
+  .subtitle-1:hover ~ .subtitle-2 {
+    opacity: 40%;
+  }
+  .subtitle-2 {
+    display: inline-block;
+    opacity: 100%;
+    font-weight: 800;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    transition: scale 400ms ease-in-out, opacity var(--transition-time) ease-in-out;
+  }
+  .subtitle-2:hover {
+    scale: 1.01;
+    mix-blend-mode: normal;
+  }
+  .subtitle-2:hover ~ .bg-image {
+    background-position: center 60%;
+    opacity: 0.75;
+  }
+  
+  .join-us-btn-link {
+    border-radius: var(--border-radius-pill);
+  }
+  
+  .join-us-btn {
+    border: none;
+    background-color: #5E5DF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: var(--border-radius-pill);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.75em 1.75em;
+    transition: gap var(--transition-time) ease, background-color var(--transition-time) ease;
+  }
+  .join-us-btn > img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    align-self: center;
+  }
+  .join-us-btn:hover {
+    background-color: #5E5DF0;
+    gap: 1em;
+  }
