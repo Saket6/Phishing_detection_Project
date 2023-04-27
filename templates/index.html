@@ -7,54 +7,50 @@
     <meta https-equiv="Content-Security-Policy" content="default-src *;" />
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <title>URL Detection</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="My project (1).ico" alt="Logo" />
-            </div>
-    
-            <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="suggestion.html">Suggestions</a></li>
-                    <li><a href="login.html" class="btn1">Login</a></li>
-                </ul>
-            </div>
-    
-            <div class="overlay"></div>
-    
-            <div class="hamburger-menu">
-                <div class="bar"></div>
-            </div>
+    <nav>
+        <div class="navigation">
+            <ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Check Email</a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <div class="nav">
+    </nav>
+    <div class="text_container">
+        <div class="check">
+            <h3>Check URL</h3>
+            <form action="/predict" id="input_text" method="post" placeholder="Paste your mail here" required>
+                <input type="text" class="url" placeholder="Enter URL here">
+                <button type="submit" id="btn">Check</button>
+            </form>
+        </div>
+    <!-- <div class="nav">
         <h3>Check URL</h3>
-        <form action="/url" method="post">
+        <form action="/" method="post">
             <input type="text" name="url" id="url" placeholder="Input url here" required>
             <button type="submit" id="btn">Send URL</button>
         </form>
-    </div>
-    <center><a href="/email">
-        <button id="emailbtn">Tap to Check Email</button></a></center>
-    <center>
-    <img class="pic1" src="https://i.postimg.cc/cJTFPzj5/20945597.jpg"></center>
+    </div> -->
     <div class="form-2" id="form2">
         
-        <br>
         <h6 class = "right "><a href= {{ url }} target="_blank">{{ url }}</a></h6>
-           
-        <br>
         <h3 id="prediction"></h3>
         
-        <button  id="btn2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
-        <button  id="btn1" onclick="window.open('{{url}}')" target="_blank">Continue</button>
+        <div class="two_btn">
+            <button  id="btn2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
+            <button  id="btn1" onclick="window.open('{{url}}')" target="_blank">Continue</button>
+        </div>
     </div> 
     
 <script src="/static/script.js"></script>
