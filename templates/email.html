@@ -8,18 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/"><button>Go back</button></a>
+    <!--a href="/"><button>Go back</button></a-->
+    <div class="nav">
     <h3>Email Scan</h3>
-    <form action="/predict" id="input_text" method="post" required>
+    <form action="/predict" id="input_text" method="post" placeholder="Paste your mail here" required>
         <textarea name="textinput" id="text" cols="30" rows="10"></textarea>
-        <button type="submit">Check</button>
+        <button type="submit" id="btn">Check</button>
     </form>
-    <div class="prediction">
+    </div>
+    <center><a href="/url"><button id="emailbtn">Tap to Check URL</button></a></center>
+    <div class="prediction"><center>
         {% if prediction == 1%}
-	<h2 style="color:red;">Looking Spam, Be safe</h2>
+	<h2 style="color:red;">It's a SPAM!</h2>
 	{% elif prediction == 0%}
-				<h2 style="color:green;"><b>Not a Spam</b></h2>
-	{% endif %}
+				<h2 style="color:green;"><b>Not a Spam, YOU ARE SAFE!</b></h2>
+	{% endif %}</center>
     </div>
 </body>
 </html>
