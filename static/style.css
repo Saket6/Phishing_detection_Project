@@ -9,7 +9,12 @@
 body
 {
     background-color:#181874;
+    /* overflow: scroll; */
 }
+/* body::-webkit-scrollbar
+{
+    display: none;
+} */
 .navigation{
     display: flex;
     /* padding: 20px 60px; */
@@ -100,10 +105,21 @@ h3{
     text-align: center;
     margin:40px 0px ;
     font-size: 20px;
-    color: yellow;
+    /* color: yellow; */
+}
+.right a
+{
+    color: rgb(154, 5, 55);
+    text-decoration: none;
+    font-size: xx-large;
+}
+.right a:hover
+{
+    color: red;
+    /* transform: scale(1.2 1.2); */
 }
 #btn1{
-    /* display: block; */
+    display: none;
     /* margin: 35px auto 20px; */
     width: 7em;
     padding: 10px;
@@ -120,7 +136,7 @@ h3{
     cursor: pointer;
 }
 #btn2{
-    /* display: block; */
+    display: none;
     /* margin: 20px; */
     width: 9em;
     padding: 15px;

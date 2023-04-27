@@ -23,6 +23,11 @@ def home():
     return render_template('phising.html')
 
 
+# @app.route('/url')
+# def urlpage():
+#     return render_template('index.html')
+
+
 @app.route("/url", methods=["GET", "POST"])
 def index():
     if request.method == "POST":

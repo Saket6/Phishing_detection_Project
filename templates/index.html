@@ -16,13 +16,13 @@
         <div class="navigation">
             <ul>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="/" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Us</a>
+                    <a href="/about" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Check Email</a>
+                    <a href="/email" class="nav-link">Check Email</a>
                 </li>
             </ul>
         </div>
@@ -30,8 +30,8 @@
     <div class="text_container">
         <div class="check">
             <h3>Check URL</h3>
-            <form action="/predict" id="input_text" method="post" placeholder="Paste your mail here" required>
-                <input type="text" class="url" placeholder="Enter URL here">
+            <form action="/url" id="input_text" method="post" placeholder="Paste your Url Here" required>
+                <input type="text" name="url" class="url" placeholder="Enter URL here">
                 <button type="submit" id="btn">Check</button>
             </form>
         </div>
