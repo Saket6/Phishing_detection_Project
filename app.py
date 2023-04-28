@@ -23,6 +23,9 @@ def home():
     return render_template('phising.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
 # @app.route('/url')
 # def urlpage():
 #     return render_template('index.html')

@@ -1,0 +1,77 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.navigation{
+    display: flex;
+    /* padding: 20px 60px; */
+    height: 80px;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(141, 131, 131);
+    background-color: #5E5DF0;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0px 70px;
+}
+.nav-item{
+    margin: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-link{
+    transition: color 0.3s;
+}
+.nav-link:hover{
+    color: orange;
+}
+
+h1
+{
+    margin: 20px auto 0px 88px;
+    color: #181874;
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 8rem;
+}
+h2
+{
+    margin: 30px auto 0px 88px;
+    color:#181874;
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 4rem;
+}
+p
+{
+    margin: 18px auto 15px 102px;
+    color: #181874;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.3rem;
+}
+.aboutus
+{
+    width: 30rem;
+    height: 15rem;
+    float: right;
+    border: 1px black;
+    margin: 5px 80px 15px 20px;
+  }
+  hr
+  {
+    color: #181874;
+    margin-top: 2rem;
+  }
+  .team
+  {
+     margin-left:5.6rem;
+     width: 87rem;
+  }
