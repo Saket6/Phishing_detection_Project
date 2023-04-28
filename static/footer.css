@@ -64,7 +64,11 @@
 
 #footer .footer-top .social-links a:hover
 {
+<<<<<<< HEAD
     background: #5E5DF0;;
+=======
+    background: var(--hover-green);
+>>>>>>> 23f6fcff54bf668319ace92224e1b943e5104f55
     color: #151515;
     text-decoration: none;
 }
@@ -114,7 +118,11 @@
 #footer .footer-top .footer-links ul a:hover,
 a[href^="mailto"]:hover
 {
+<<<<<<< HEAD
     color: #5E5DF0;;
+=======
+    color: var(--hover-green);
+>>>>>>> 23f6fcff54bf668319ace92224e1b943e5104f55
 }
 
 #footer .footer-top .footer-newsletter form

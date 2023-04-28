@@ -14,7 +14,11 @@
     top: 0;
     left: 0;
     background-image: url("../assets/images/food_rangers_bg.jpg");
+<<<<<<< HEAD
     background-image: url("12953623_Data_security_24.jpg");
+=======
+    background-image: url("../templates/12953623_Data_security_24.jpg");
+>>>>>>> 23f6fcff54bf668319ace92224e1b943e5104f55
     background-position: center center;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -49,7 +53,11 @@
     content: "";
     width: 36px;
     height: 36px;
+<<<<<<< HEAD
     background-image: url("My\ project\ \(1\).ico");
+=======
+    background-image: url("../templates/My\ project\ \(1\).ico");
+>>>>>>> 23f6fcff54bf668319ace92224e1b943e5104f55
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
