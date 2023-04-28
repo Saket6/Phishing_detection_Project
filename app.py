@@ -11,7 +11,7 @@ import pickle
 warnings.filterwarnings('ignore')
 from features import FeatureExtraction
 
-file = open("model_save.pkl","rb")
+file = open("model_save_new.pkl","rb")
 model = pickle.load(file)
 file.close()
 
